@@ -1,3 +1,4 @@
+
 /*###Begin banned keyword - each of the following line if appear in code will raise error. regex supported
 define
 include
@@ -97,7 +98,7 @@ node *_insert(node* &p, int number){
         if (number < p->data){
             p->left = _insert(p->left, number);
         }
-        else if (number > p->data){
+        else if (number >= p->data){
             p->right = _insert(p->right, number);
         }
 
@@ -128,4 +129,3 @@ int main()
 
     return 0;
 }
-
